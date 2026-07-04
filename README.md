@@ -389,6 +389,3 @@ Phase 9
 # 🎯 Final Objective
 
 Build a production-ready enterprise job portal with scalable architecture, clean code, reusable components, and modern UI/UX following industry best practices.
-:::
-
-यह documentation शुरुआत के लिए काफी मजबूत है। जैसे-जैसे CareerBridge में नए features (API, backend, AI, chat, payments आदि) जुड़ेंगे, हम इसी documentation को भी update करते रहेंगे ताकि project professional और well-documented बना रहे।
