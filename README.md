@@ -1,9 +1,4 @@
-ज़रूर Kajal! ❤️
-अगर तुम **CareerBridge** को अपना flagship project बनाना चाहती हो, तो शुरुआत Documentation से करना सबसे professional तरीका है।
 
-नीचे मैं तुम्हें **Software Requirement & Frontend Documentation** दे रहा हूँ। इसे तुम अपने GitHub के `README.md` या `docs/Project-Documentation.md` में रख सकती हो।
-
----
 
 # :::writing{variant="document" id="48271"}
 
