@@ -1,56 +1,36 @@
 import React from "react";
 
-const menuitems=[
-    "Home ",
-    "Jobs",
-    "Companies",
-    "Blogs",
-    "Contect",
-    
-]
+const menuItems = [
+  "Home",
+  "Jobs",
+  "Companies",
+  "Blogs",
+  "Contact",
+];
 
 const Menu = () => {
   return (
-    // <nav>
-    //   <ul className="flex items-center gap-8">
-    //     {menuItems.map((item) => (
-    //       <li
-    //         key={item}
-    //         className="cursor-pointer font-medium text-white hover:text-pink-800 hover:bg-white transition-colors bg-pink-800 py-2 px-3 rounded-4xl border-2 boder-white"
-    //       >
-    //         {item}
-    //       </li>
-    //     ))}
-
-    //     <li>
-    //       <button className="rounded-lg bg-blue-700 px-5 py-2 text-white hover:bg-blue-900 transition">
-    //         Register
-    //       </button>
-    //     </li>
-    //   </ul>
-    // </nav>
     <nav>
-        <ul className="flex items-center gap-8">
-            {menuitems.map((item)=>(
+      <ul className="flex items-center gap-8">
+        {menuItems.map((item) => (
+          <li
+            key={item}
+            className="relative cursor-pointer font-medium text-slate-700 transition-all duration-300 hover:text-[#0EA5E9] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#0EA5E9] after:transition-all after:duration-300 hover:after:w-full"
+          >
+            {item}
+          </li>
+        ))}
 
-<li key={item}
-    className="cursor-pointer font-medium text-gray-300 hover:text-pink-800 hover:bg-white transition-colors bg-[#F25022] py-2 px-3 rounded-4xl border-2 boder-white"
->
-    {item}
-</li>
-            )
-
-            )}
-<li className="gap-5">
-<button className="rounded-lg bg-blue-700 px-5 py-2 text-white hover:bg-blue-900 transition">
-             Login
+        <li className="ml-6 flex items-center gap-4">
+          <button className="rounded-lg border border-[#0EA5E9] px-5 py-2 font-medium text-[#0EA5E9] transition-all duration-300 hover:bg-[#0EA5E9] hover:text-white">
+            Login
           </button>
-          <button className="rounded-lg mx-5 bg-blue-700 px-5 py-2 text-white hover:bg-blue-900 transition">
-             Register
+
+          <button className="rounded-lg bg-[#0EA5E9] px-5 py-2 font-medium text-white shadow-md transition-all duration-300 hover:bg-[#0284C7] hover:shadow-lg">
+            Register
           </button>
         </li>
-
-        </ul>
+      </ul>
     </nav>
   );
 };

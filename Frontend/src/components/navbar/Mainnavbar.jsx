@@ -1,13 +1,18 @@
-import React from 'react'
-import Logo from '../ui/Logo'
-import Manu from '../ui/Manu'
-const Mainnavbar = () => {
+import React from "react";
+import Logo from "../ui/Logo";
+import Menu from "../ui/Manu";
+
+// w-full bg-gradient-to-r from-[#14213D] to-[#0EA5E9]
+
+const MainNavbar = () => {
   return (
-    <div className=' w-full h-20 py-4 px-10  border-b-3 border-gray-300 flex flex-row justify-between'><Logo/>
+    <header className="sticky top-0 z-50  shadow-lg">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
+        <Logo />
+        <Menu />
+      </div>
+    </header>
+  );
+};
 
-<Manu/>
-    </div>
-  )
-}
-
-export default Mainnavbar
+export default MainNavbar;
