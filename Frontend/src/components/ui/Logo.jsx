@@ -1,8 +1,10 @@
+import logo from "../../assets/logo.png";
+
 const Logo = () => {
     return (
-      <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-900 via-purple-600 to-pink-600 bg-clip-text text-transparent inline-block">
-        CareerBridge
-      </h1>
+      <div>
+<img src={logo} alt="Logo" className="w-65 h-20 -mt-5" />
+      </div>
     );
   };
   
