@@ -1,12 +1,26 @@
-import logo from "../../assets/logo.png";
+import icon from "../../assets/icon.png";
 
 const Logo = () => {
-    return (
-      <div>
-<img src={logo} alt="Logo" className="w-65 h-20 -mt-5" />
+  return (
+    <div className="flex items-center gap-1 cursor-pointer">
+      <img
+        src={icon}
+        alt="CareerBridge Logo"
+        className="h-12 w-auto object-contain"
+      />
+
+      <div className="flex flex-col leading-tight">
+        <h1 className="text-2xl font-bold tracking-tight">
+          <span className="text-[#14213D]">Career</span>
+          <span className="text-[#0EA5E9]">Bridge</span>
+        </h1>
+
+        <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-gray-500">
+          CConnecting Talent to Opportunity
+        </p>
       </div>
-    );
-  };
-  
-  export default Logo;
-//   <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent inline-block">
+    </div>
+  );
+};
+
+export default Logo;

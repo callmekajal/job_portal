@@ -1,16 +1,25 @@
-import { useState } from 'react'
+
 
 import './App.css'
-import Mainnavbar from './components/navbar/Mainnavbar'
+
+import { Route, Routes } from 'react-router-dom'
+import AuthLayout from './components/layout/AuthLayout'
+import Hero from './Feartures/website/home/pages/Hero'
 
 function App() {
 
 
   return (
-    <h1>
-<Mainnavbar/>
+    <>
+<Routes>
 
-      </h1>
+<Route element={<AuthLayout />}>
+    <Route path='/' element={<Hero/>} />  
+
+  </Route>
+  </Routes>
+
+      </>
   )
 }
 
